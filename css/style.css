@@ -1,0 +1,184 @@
+@font-face {
+    font-weight: 400;
+    font-family: "Montserrat";
+    font-style: normal;
+    src: url("fonts/Montserrat-Regular.ttf") format("ttf");
+}
+
+@font-face {
+    font-weight: 700;
+    font-family: "Montserrat";
+    font-style: normal;
+    src: url("fonts/Montserrat-Bold.ttf") format("ttf");
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", "Arial", sans-serif;
+    color: #333333;
+}
+
+
+.container {
+    min-height: 600px;
+    height: 100vh;
+    background-image: url(../img/dot-grid.png);
+}
+
+.container-content {
+    display: flex;
+    max-width: 1140px;
+    min-height: 600px;
+    height: 100vh;
+    margin: 0 auto;
+}
+
+.left {
+    width: 60%;
+    margin: auto;
+    padding: 20px;
+}
+
+.left h1 {
+    font-size: 40px;
+}
+
+.left span {
+    color: #d12e6f;
+}
+
+.first,
+.last {
+    display: flex;
+    justify-content: space-between;
+}
+
+.first .fas,
+.last .fas {
+    color: #d12e6f;
+    font-size: 30px;
+}
+
+.left .icon {
+    width: 50px;
+    text-align: center;
+    margin-right: 20px;
+}
+
+.left .first {
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+.right {
+    height: 500px;
+    width: 40%;
+    background-image: url(../img/clipboard-min.png);
+    background-size: 90%;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: center;
+    margin: auto;
+}
+
+.image-check {
+    display: none;
+    height: 300px;
+    width: 90%;
+    background-image: url(../img/clipboard2-min.png);
+    background-size: 60%;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: center;
+    margin: auto;
+}
+
+.button-social {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 100px;
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 50px;
+    font-size: 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.fa-telegram,
+.fa-instagram {
+    margin-right: 10px;
+    font-size: 30px;
+    color: #ffffff;
+}
+
+.social-telegram {
+    background-color: #2ba0d9;
+    transition: 0.5s;
+}
+
+.social-telegram:hover {
+    box-shadow: 0px 0px 11px 3px rgb(0 0 0 / 39%);
+}
+
+.social-instagram {
+    transition: 0.5s;
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+}
+
+.social-instagram:hover {
+    box-shadow: 0px 0px 11px 3px rgb(0 0 0 / 39%);
+}
+
+@media (max-width: 1070px) { 
+    .button-social {
+        flex-direction: column;
+        align-items: center;
+    }
+    .social {
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 774px) { 
+    .right {
+        display: none;
+    }
+
+    .image-check {
+        display: block;
+        background-size: 230px;
+    }
+
+    .left {
+        width: 80%;
+    }
+
+    .button-social {
+        margin-top: 50px;
+    }
+
+    .left h1 {
+        font-size: 30px;
+        text-align: center;
+    }
+}
+
+@media (max-width: 514px) { 
+    .left {
+        width: 100%;
+    }
+
+    .left h1 {
+        font-size: 30px;
+        text-align: center;
+    }
+}
